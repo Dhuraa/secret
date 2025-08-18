@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes,Link } from "react-router-dom"; // Import Routes instead of Switch
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"; // Import Routes instead of Switch
 import Quiz from "./components/quiz/quiz";
 import Coupons from "./components/coupons/coupons";
 import Timeline from "./components/timeline/timeline";
@@ -47,9 +47,15 @@ function Navbar() {
             className="bg-black text-white border-2 border-white p-2"
           >
             {tabs.map((t) => (
-              <option key={t.id} value={t.id}>
-                {t.label.toUpperCase()}
-              </option>
+              <Link
+                key={t.id}
+                to={`/${t.id}`} // Link to corresponding route
+                className={`px-3 py-2 border-2 border-white`}>
+                <option key={t.id} value={t.id}>
+                  {t.label.toUpperCase()}
+                </option>
+              </Link>
+
             ))}
           </select>
         </div>
