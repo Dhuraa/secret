@@ -22,7 +22,7 @@ function Navbar() {
           {tabs.map((t) => (
             <Link
               key={t.id}
-              to={`/${t.id}`} // Link to corresponding route
+              to={`/secret/${t.id}`} // Link to corresponding route
               className={`px-3 py-2 border-2 border-white`}
             >
               <span className="pixel-2d text-xs">{t.label.toUpperCase()}</span>
