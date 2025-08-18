@@ -12,5 +12,4 @@ body{
   font-family: 'Press Start 2P', monospace; 
   background:
     radial-gradient(circle at 10% 10%, #16202a 0%, var(--bg) 30%);
-  color:var(--panel); padding:24px;
 }

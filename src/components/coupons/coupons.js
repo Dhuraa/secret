@@ -38,16 +38,16 @@ function humanDate(date) {
     expiry.setFullYear(expiry.getFullYear() + 1);
   
     return (
-    <section className="max-w-3xl mx-auto p-6 font-pixel">
-      <h2 className="text-3xl font-bold text-white mb-6 text-center">
+    <section className="max-w-5xl mx-auto p-6 font-pixel">
+      <h2 className="text-2xl font-bold text-yellow-300 mb-6 text-center">
         🎟 Coupons & Vouchers 🎟
       </h2>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-8 md:grid-cols-2">
         {couponsData.map(c => (
           <div
             key={c.id}
-            className="p-4 rounded-lg bg-gray-900 border-4 border-white hover:shadow-[0_0_15px_#fff] transition-all duration-200"
+            className="p-4 bg-black border-4 border-white hover:shadow-[0_0_15px_#fff] transition-all duration-200"
           >
             <div className="flex items-start justify-between">
               <div>

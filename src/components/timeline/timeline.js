@@ -7,8 +7,8 @@
     ];
   
     return (
-    <section className="max-w-3xl mx-auto p-6 font-pixel">
-    <h2 className="text-lg sm:text-xl md:text-2xl text-yellow-300 mb-6 border-b-4 border-white pb-2">
+    <section className="max-w-4xl mx-auto p-6 font-pixel">
+    <h2 className="text-lg sm:text-xl md:text-2xl text-yellow-300 mb-6 pb-2">
         Memories Timeline
     </h2>
 
@@ -16,7 +16,7 @@
         {events.map((e, i) => (
         <div
             key={i}
-            className="p-4 border-4 border-white bg-gray-900 rounded-lg shadow-[0_0_6px_#fff]"
+            className="p-4 border-4 border-white bg-black"
         >
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <div className="text-white">{e.title}</div>
