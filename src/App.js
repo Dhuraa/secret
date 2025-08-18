@@ -37,7 +37,7 @@ function Navbar() {
             <div className="flex">HAPPY BOYFRIEND DAY</div>
           </h1>
           <div className="ml-4">
-            <img src="/Frisk.png" alt="Undertale Heart" width={100} />
+            <img src={process.env.PUBLIC_URL + "/Frisk.png"} alt="Undertale Heart" width={100} />
           </div>
         </div>
 
