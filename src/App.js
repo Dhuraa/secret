@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"; // Import Routes instead of Switch
+import { BrowserRouter as Router, Route, Routes, Link, HashRouter} from "react-router-dom"; // Import Routes instead of Switch
 import Quiz from "./components/quiz/quiz";
 import Coupons from "./components/coupons/coupons";
 import Timeline from "./components/timeline/timeline";
