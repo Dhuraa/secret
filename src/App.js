@@ -82,13 +82,15 @@ export default function App() {
           <main className="py-8 px-4">
             <div className="max-w-5xl mx-auto p-2">
               {/* Define Routes using 'Routes' */}
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/letter" element={<Letter />} />
-                <Route path="/quiz" element={<Quiz />} />
-                <Route path="/coupons" element={<Coupons />} />
-                <Route path="/timeline" element={<Timeline />} />
-              </Routes>
+              <HashRouter>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/letter" element={<Letter />} />
+                  <Route path="/quiz" element={<Quiz />} />
+                  <Route path="/coupons" element={<Coupons />} />
+                  <Route path="/timeline" element={<Timeline />} />
+                </Routes>
+              </HashRouter>
             </div>
           </main>
 
