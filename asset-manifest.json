@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%3Crepo-name%3E/static/css/main.ade3f864.css",
-    "main.js": "/%3Crepo-name%3E/static/js/main.45b53652.js",
-    "static/js/453.a597141b.chunk.js": "/%3Crepo-name%3E/static/js/453.a597141b.chunk.js",
-    "index.html": "/%3Crepo-name%3E/index.html",
-    "main.ade3f864.css.map": "/%3Crepo-name%3E/static/css/main.ade3f864.css.map",
-    "main.45b53652.js.map": "/%3Crepo-name%3E/static/js/main.45b53652.js.map",
-    "453.a597141b.chunk.js.map": "/%3Crepo-name%3E/static/js/453.a597141b.chunk.js.map"
+    "main.css": "/secret/static/css/main.ade3f864.css",
+    "main.js": "/secret/static/js/main.65a86156.js",
+    "static/js/453.a597141b.chunk.js": "/secret/static/js/453.a597141b.chunk.js",
+    "index.html": "/secret/index.html",
+    "main.ade3f864.css.map": "/secret/static/css/main.ade3f864.css.map",
+    "main.65a86156.js.map": "/secret/static/js/main.65a86156.js.map",
+    "453.a597141b.chunk.js.map": "/secret/static/js/453.a597141b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ade3f864.css",
-    "static/js/main.45b53652.js"
+    "static/js/main.65a86156.js"
   ]
 }
