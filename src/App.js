@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link, HashRouter} from "react-router-dom"; // Import Routes instead of Switch
+import { Route, Routes, Link,} from "react-router-dom"; // Import Routes instead of Switch
 import Quiz from "./components/quiz/quiz";
 import Coupons from "./components/coupons/coupons";
 import Timeline from "./components/timeline/timeline";
@@ -66,42 +66,38 @@ function Navbar() {
 
 export default function App() {
   return (
-    <Router>
-      <div className="relative min-h-screen bg-black text-white font-pixel overflow-hidden">
-        {/* 🔹 Green Grid Background */}
-        <div className="absolute inset-0 z-0 grid grid-cols-4 grid-rows-3 border border-green-500 pointer-events-none">
-          {[...Array(12)].map((_, i) => (
-            <div key={i} className="border border-green-500" />
-          ))}
-        </div>
-
-        {/* 🔸 Foreground Content */}
-        <div className="relative z-10">
-          <Navbar />
-
-          <main className="py-8 px-4">
-            <div className="max-w-5xl mx-auto p-2">
-              {/* Define Routes using 'Routes' */}
-              <HashRouter>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/letter" element={<Letter />} />
-                  <Route path="/quiz" element={<Quiz />} />
-                  <Route path="/coupons" element={<Coupons />} />
-                  <Route path="/timeline" element={<Timeline />} />
-                </Routes>
-              </HashRouter>
-            </div>
-          </main>
-
-          <footer className="py-6 text-center text-xs text-yellow-300 border-t-2 border-white">
-            <span className="block">
-              Made with ❤️ — by your one and only girlfriend Dhura
-            </span>
-            <span className="block mt-1 text-white">© 2025 All Rights Reserved</span>
-          </footer>
-        </div>
+    <div className="relative min-h-screen bg-black text-white font-pixel overflow-hidden">
+      {/* 🔹 Green Grid Background */}
+      <div className="absolute inset-0 z-0 grid grid-cols-4 grid-rows-3 border border-green-500 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <div key={i} className="border border-green-500" />
+        ))}
       </div>
-    </Router>
+
+      {/* 🔸 Foreground Content */}
+      <div className="relative z-10">
+        <Navbar />
+
+        <main className="py-8 px-4">
+          <div className="max-w-5xl mx-auto p-2">
+            {/* ✅ Routes only (HashRouter already in index.js) */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/letter" element={<Letter />} />
+              <Route path="/quiz" element={<Quiz />} />
+              <Route path="/coupons" element={<Coupons />} />
+              <Route path="/timeline" element={<Timeline />} />
+            </Routes>
+          </div>
+        </main>
+
+        <footer className="py-6 text-center text-xs text-yellow-300 border-t-2 border-white">
+          <span className="block">
+            Made with ❤️ — by your one and only girlfriend Dhura
+          </span>
+          <span className="block mt-1 text-white">© 2025 All Rights Reserved</span>
+        </footer>
+      </div>
+    </div>
   );
 }
