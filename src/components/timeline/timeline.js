@@ -1,9 +1,12 @@
 
  const Timeline = () => {
     const events = [
-      { date: '2024-11-17', title: 'Swiped Right', desc: 'That guiness book prompt chnaged everything' },
-      { date: '2024-03-23', title: 'First Date', desc: 'Met for First time on an ikea date. Where you didnt let me have guava ice cream' },
-      { date: '2024-04-27', title: 'Second Date', desc: 'The date that changed everything' },
+      { date: '2024-11-17', title: 'Swiped Right', desc: 'The day we matched on hingeeee' },
+      { date: '2024-03-23', title: 'Ikea Date', desc: 'Met for First time on an ikea date. Where you didnt let me have guava soft serve' },
+      { date: '2024-04-27', title: 'Museum Date', desc: 'The date that changed everything !!! Best museum date everrrrrr' },
+      { date: '2024-05-09', title: 'Confession Day', desc: 'Despite all the hesitation, we finally admitted our crush on each other' },
+      { date: '2024-05-28', title: 'First I Love You', desc: 'The day we said “I love you” to each other for the very first time' },
+      { date: '2024-10-03', title: 'Boyfriend Day', desc: 'And fianlly we reached todayyyy. Happy Boyfriend Day!!!!' },
     ];
   
     return (

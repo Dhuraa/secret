@@ -105,16 +105,6 @@ const Coupons = () => {
               >
                 Redeem
               </button>
-              <button
-                onClick={() =>
-                  navigator.clipboard?.writeText(
-                    `${c.title} - Expires ${formatDateYYYYMMDD(expiry)}`
-                  )
-                }
-                className="px-3 py-1 rounded border-2 border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-150"
-              >
-                Copy
-              </button>
             </div>
           </div>
         ))}
