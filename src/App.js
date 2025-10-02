@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Link,} from "react-router-dom"; // Import Routes instead of Switch
+import { Route, Routes, Link,useNavigate } from "react-router-dom"; // Import Routes instead of Switch
 import Quiz from "./components/quiz/quiz";
 import Coupons from "./components/coupons/coupons";
 import Timeline from "./components/timeline/timeline";
@@ -14,16 +14,19 @@ function Navbar() {
     { id: "timeline", label: "Memories" },
   ];
 
+  const navigate = useNavigate();
+
   return (
     <nav className="w-full bg-black border-b border-green-500">
       <div className="max-w-5xl mx-auto py-4 flex items-center justify-between">
+        
         {/* Desktop Tabs */}
         <div className="hidden md:flex items-center gap-4">
           {tabs.map((t) => (
             <Link
               key={t.id}
-              to={`/${t.id}`} // Link to corresponding route
-              className={`px-3 py-2 border-2 border-white`}
+              to={`/${t.id}`}
+              className="px-3 py-2 border-2 border-white"
             >
               <span className="pixel-2d text-xs">{t.label.toUpperCase()}</span>
             </Link>
@@ -32,12 +35,15 @@ function Navbar() {
 
         {/* Logo + Title */}
         <div className="flex items-center gap-3">
-          {/* Pixel 2D title */}
           <h1 className="pixel-2d text-yellow-300 text-sm sm:text-base ml-1">
             <div className="flex">HAPPY BOYFRIEND DAY</div>
           </h1>
           <div className="ml-4">
-            <img src={process.env.PUBLIC_URL + "/Frisk.png"} alt="Undertale Heart" width={100} />
+            <img
+              src={process.env.PUBLIC_URL + "/Frisk.png"}
+              alt="Undertale Heart"
+              width={100}
+            />
           </div>
         </div>
 
@@ -45,17 +51,13 @@ function Navbar() {
         <div className="md:hidden">
           <select
             className="bg-black text-white border-2 border-white p-2"
+            onChange={(e) => navigate(`/${e.target.value}`)}
           >
+            <option value="">Select Page</option>
             {tabs.map((t) => (
-              <Link
-                key={t.id}
-                to={`/${t.id}`} // Link to corresponding route
-                className={`px-3 py-2 border-2 border-white`}>
-                <option key={t.id} value={t.id}>
-                  {t.label.toUpperCase()}
-                </option>
-              </Link>
-
+              <option key={t.id} value={t.id}>
+                {t.label.toUpperCase()}
+              </option>
             ))}
           </select>
         </div>
