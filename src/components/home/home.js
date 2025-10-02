@@ -12,7 +12,7 @@ const Home = () => {
                     </p>
                     <p className="text-white mb-6">
                         * You've just stepped into a special world...* <br />
-                        * Here, we celebrate the love between you and your one and only beautiful gir!*
+                        * Here, we celebrate the love between you and your one and only beautiful girlfriend - that is meeeeeeeee!*
                     </p>
 
                     <p className="text-yellow-300 mb-4">
@@ -20,7 +20,7 @@ const Home = () => {
                     </p>
 
                     <p className="text-white mb-6">
-                        * Get ready to embark on a journey where you can share moments, solve quizzes, and receive lovely coupons that will make your day extra special! *
+                        * Get ready to embark on a journey where you can solve quizzes, and receive lovely coupons that will make your day extra special! *
                     </p>
 
                     <p className="text-yellow-300">
