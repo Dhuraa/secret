@@ -4,13 +4,13 @@ const couponsData = [
     title: "Café Hopping Date",
     description:
       "An afternoon of exploring new cafés together, complete with coffee, desserts, and laughs.",
-    terms: "Valid once. Drinks on me.",
+    terms: "Valid multiple times",
   },
   {
     id: "movie",
     title: "Movie Date",
     description:
-      "Redeem for one movie night (dress code: comfy). Popcorn is mandatory to share.",
+      "Redeem for one movie night.",
     terms: "Valid for one movie of my choiceeeee.",
   },
   {
@@ -18,20 +18,20 @@ const couponsData = [
     title: "Game Night Date",
     description:
       "An evening dedicated to gaming together — you pick the game, I’ll be your player two.",
-    terms: "Valid once. Winner gets bragging rights.",
+    terms: "Valid once.",
   },
   {
     id: "yourcall",
     title: "Your Rules Day",
     description:
       "A full day where I do as you say — your choices, your plans, your rules.",
-    terms: "Valid for one day. No outrageous requests allowed 😉.",
+    terms: "Valid for one day only.",
   },
   {
     id: "drunkme",
     title: "Drunk Me Pass",
     description:
-      "Redeem for a tipsy, giggly version of me who will either dance, sing, or confess cute things I normally wouldn’t.",
+      "Redeem for a tipsy, giggly version of me who will flirt with you or play with candlessss. No in betweennn",
     terms:
       "Valid once. Must be redeemed responsibly.",
   },
@@ -47,7 +47,7 @@ const couponsData = [
     title: "Makeout Session",
     description:
       "Redeem for a spontaneous makeout session — no excuses, no interruptions.",
-    terms: "Valid once per coupon. One-year expiry.",
+    terms: "Validity unlimitedddd",
   },
 ];
 
