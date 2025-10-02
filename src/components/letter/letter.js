@@ -1,8 +1,6 @@
-const letterMock = `My Dearest
+const letterMock = `Dear Tanmayyy
 
-Much like an unexpected second life, meeting you felt like finding a new path I never knew existed. You are my calm in storms, my laughter in quiet halls, and the gentle push that helps me grow.
-
-I promise to be your companion on every small adventure — to learn with you, to joke with you, and to make even the ordinary feel magical.
+Usually, when I write a letter, I know where to start, but for this one I am truly lost. You came into my life when I felt lost and hopeless, and you showed me what it feels like to be truly loved and to have someone who is there for you, no matter what. I may not always be great at expressing my feelings, but I do want you to know I genuinely love you a lot. There have been times with you when I felt extremely emotional because I have these overwhelming feelings for you, and it gets frustrating when I am unable to express them because you deserve to know how much you mean to me. I love how patient, kind, caring, sweet, funny, and smart you are (the list is infinite, but that's enough for today). You are THE boyfriend, partner, and best friend anyone could ask for, and I swear I can't go a single day without you.
 
 The one who is always right,
 Dhura`;
